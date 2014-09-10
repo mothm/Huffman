@@ -30,6 +30,20 @@ public:
     HuffmanNode* getRight() { return right }
     char getLetter() { return *letter }
     int getCount() { return count }
+
+    bool operator>(HuffmanNode &h1, HuffmanNode &h2)
+    {
+        return h1.count > h2.count;
+    }
+
+    bool operator<(HuffmanNode &h1, HuffmanNode &h2) { return h2 > h1; }
+
+    bool operator>=(HuffmanNode &h1, HuffmanNode &h2)
+    {
+        return h1.count >= h2.count;
+    }
+
+    bool operator<=(HuffmanNode &h1, HuffmanNode &h2) { return h2 >= h1; }
 };
 
 #endif

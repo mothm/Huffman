@@ -21,6 +21,15 @@ int* count(std::ifstream& input)
     return counts&;
 }
 
+HuffmanNode* makeTree(int fileCount&)
+{
+    PriorityQueue<HuffmanNode> q = new PriorityQueue();
+    for (int i = 0; i < 256; i++)
+    {
+
+    }
+}
+
 void compress()
 {
     using namespace std;
