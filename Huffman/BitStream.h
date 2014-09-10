@@ -33,9 +33,7 @@ private:
     std::ifstream& file;
 
 public:
-    BitInputStream(std::ofstream& os, std::ifstream& ins) : out(os),
-                                                           file(ins,
-                                                                ios::binary)
+    BitInputStream(std::ifstream& ins) : file(ins, ios::binary)
     {
         buffer = 0;
         bits   = 7;

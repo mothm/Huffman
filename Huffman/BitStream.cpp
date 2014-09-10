@@ -45,5 +45,4 @@ int BitInputStream::readBit()
 void BitInputStream::close()
 {
     file.close();
-    out.close();
 }
